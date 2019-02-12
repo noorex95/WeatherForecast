@@ -5,6 +5,7 @@
   "main": "restore.js",
   "dependencies": {
     "connect": "^3.6.6",
+    "express": "^4.16.4",
     "http-server": "^0.11.1",
     "node-static": "^0.7.11",
     "serve-static": "^1.13.2"

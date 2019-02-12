@@ -2,8 +2,12 @@ var http = require('http');
 var url = require('url'); 
 var static = require('node-static'); 
 var file = new static.Server('.');
+var express = require("express");
+var app = express();
 
 
+
+app.use(express.static('static'));
 var accept = function(req, res){
     file.serve(req,res, function (err, res){
       if (err){

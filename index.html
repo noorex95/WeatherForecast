@@ -3,24 +3,40 @@
 <head>
     <meta charset="utf-8">
     <title>Weather forecast</title>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body>
-    
-    <h3>Enter your city and press the button</h3>
-    <input id="changeCity" size="30px">
-    <button id="submitResult">Button</button>
-    
-    <div id="weather forecast" style="display: none; font-size: 16pt;">
-        <!--<p>City: <span id="location"></span></p>-->
+<header>
+    <div class="header_presentation">
+        <h1>Enter your city and press the button</h1>
+    </div>
+</header>
+
+
+<main>
+    <div class="choose_city">
+        <input id="changeCity" size="30px">
+    </div>
+
+    <div class="search_result">
+        <button id="submitResult">Button</button>
+    </div>
+
+    <div class="result_weather" id="weather forecast">
+        <p>Location: <span id="location"></span></p>
         <p>Temperature: <span id="temperature"></span></p>
         <p>Weather: <span id="weather"></span></p>
         <p>Clouds: <span id="clouds"></span></p>
         <p>Wind: <span id="wind"></span></p> 
     </div>
-<script src="js/script.js"></script>
-<script src="js/restore.js"></script>
-<script src="js/result.js"></script>
+</main>
+
+
+<script src="src/js/script.js"></script>
+<script src="src/js/restore.js"></script>
+<script src="src/js/result.js"></script>
 
 </body>
 </html>
